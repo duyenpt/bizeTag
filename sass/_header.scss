@@ -1,0 +1,79 @@
+header{
+
+  background: #263849;
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+//  width: 23.33%;
+  width: 25%;
+  .bg-logo{
+    background: #2c3e50;
+  }
+  .logo{
+    width: 83px;
+    height: 83px;
+    max-width: 100%;
+    line-height: 83px;
+    position: relative;
+    margin: auto;
+    @include box-shadow(0 1px 10px rgba($black,0.08));
+    text-align: center;
+    img{
+      vertical-align: middle;
+      max-height: 83px;
+    }
+    a{
+      line-height: normal;
+      position: absolute;
+      font-size: 10px;
+      color: $white;
+      bottom: 5px;
+      right: 5px;
+      @include Roboto();
+      font-weight: 300;
+    }
+  }
+
+  nav{
+    font-size: 18px;
+    a{
+      color: $white;
+      i{
+        vertical-align: middle;
+      }
+    }
+    .checkin-request{
+      .check-in{
+        @include clearfix();
+        @include MyriadPro();
+        padding: 15px;
+        .pull-right{
+          @include HelveticaNeue();
+          font-weight: 300;
+          color: $color-link-nav;
+        }
+      }
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0 10px 110px;
+        background: #34495e;
+        li{
+          border-bottom:1px dashed #415466;
+          padding: 24px 5px;
+          a{
+            position: relative;
+            padding-left: 48px;
+            i{
+              left: 0;
+              top:50%;
+              @include transform(translateY(-50%));
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}

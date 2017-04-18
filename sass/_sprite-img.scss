@@ -1,3 +1,19 @@
 .sprite-add-landingpage{
   @include use-sprite("add-landingpage",true);
 }
+
+.sprite-checkin-request{
+  @include use-sprite("checkin-request",true);
+}
+
+.sprite-landingpage{
+  @include use-sprite("landingpage",true);
+}
+
+.sprite-bizetag{
+  @include use-sprite("bizetag",true);
+}
+
+.sprite-claims{
+  @include use-sprite("claims",true);
+}
