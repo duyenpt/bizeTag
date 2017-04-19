@@ -159,3 +159,7 @@ $sprite-high-res-suffix: '-2x' !default;
     clear: both;
   }
 }
+
+@mixin FreightBigProSemiBold(){
+  font-family: FreightBigProSemiBold, Arial, Helvetica, sans-serif;
+}

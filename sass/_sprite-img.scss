@@ -17,3 +17,39 @@
 .sprite-claims{
   @include use-sprite("claims",true);
 }
+
+.sprite-board{
+  @include use-sprite("board",true);
+}
+
+.sprite-post{
+  @include use-sprite("post",true);
+}
+
+.sprite-setting{
+  @include use-sprite("setting",true);
+}
+
+.sprite-logout{
+  @include use-sprite("logout",true);
+}
+
+.sprite-user{
+  @include use-sprite("user",true);
+}
+
+.sprite-email{
+  @include use-sprite("email",true);
+}
+
+.sprite-payment{
+  @include use-sprite("payment",true);
+}
+
+.sprite-support{
+  @include use-sprite("support",true);
+}
+
+.sprite-add-landingpage{
+  @include use-sprite("add-landingpage",true);
+}

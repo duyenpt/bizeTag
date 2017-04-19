@@ -156,14 +156,25 @@ html, body{
 
 @font-face {
   font-family: "MyriadProSemibold";
-  src: url('../fonts/MyriadPro-Semibold.eot?') format('eot');
-  src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/MyriadPro-Semibold.woff') format('woff'),
-  url('../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
-  url('../fonts/MyriadPro-Semibold.ttf') format('truetype');
+  src: url('../fonts/MyriadPro/MyriadPro-Semibold.eot?') format('eot');
+  src: url('../fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro/MyriadPro-Semibold.woff') format('woff'),
+  url('../fonts/MyriadPro/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
+  url('../fonts/MyriadPro/MyriadPro-Semibold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FreightBigProSemiBold';
+  src: url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.eot');
+  src: url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.eot') format('embedded-opentype'),
+  url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.woff2') format('woff2'),
+  url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.woff') format('woff'),
+  url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.ttf') format('truetype'),
+  url('../fonts/FreightBigProSemiBold/FreightBigProSemiBold.svg#FreightBigProSemiBold') format('svg');
+}
+
 
 body{
   margin: 0;
@@ -179,12 +190,6 @@ img{
   max-width: 100%;
 }
 
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
 .fill{
   height: 100%;
   min-height: 100%;
@@ -197,3 +202,129 @@ a{
     color:$color-link-hover;
   }
 }
+
+.main-content{
+  margin-left: 23.33%;
+  position: relative;
+  padding-top: 64px;
+}
+
+/* navigator top */
+.navigator-top{
+  position: absolute;
+  padding-right: 32px;
+  height: 58px;
+  border-top:2px solid $color-nav;
+  top:0;
+  left: 0;
+  right: 0;
+  .btn-right{
+    position: absolute;
+    top:-2px;
+    right: 0;
+    width: 32px;
+    height: 58px;
+    background: $color-nav;
+    color:$white;
+    text-align: center;
+    line-height: 58px;
+  }
+  .slide-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include clearfix();
+    background: #71bdf0;
+    position: static;
+    .slick-prev{
+      display: none !important;
+    }
+    .slick-next{
+      position: absolute;
+      top:-2px;
+      right: 0;
+      width: 32px;
+      height: 58px;
+      background: $color-nav;
+      color:$white;
+      text-align: center;
+      line-height: 58px;
+      border: none;
+      cursor: pointer;
+      font-size: 0;
+      &:after{
+        @extend .fa;
+        content: "\f0d9";
+        position: absolute;
+        top:50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+        font-size: 14px;
+      }
+    }
+    .slick-track{
+      .item{
+        float: left;
+        width: 203px;
+        a{
+          display: block;
+          height: 56px;
+          text-align: center;
+          text-transform: uppercase;
+          color:$white;
+          font-size: 14px;
+          padding-top: 5px;
+          background: #71bdf0;
+          &.clr-1{
+            background: #2b89c9;
+          }
+          &.clr-2{
+            background: #3998d8;
+          }
+          &.clr-3{
+            background: #50a6e0;
+          }
+          &.clr-4{
+            background: #60b1e8;
+          }
+          &.clr-5{
+            background: #71bdf0;
+          }
+        }
+      }
+    }
+  }
+}
+/* e: navigator top */
+
+/* layout */
+.row{
+  padding: 6px 3px;
+  .main-col{
+    float: left;
+    width: 70%;
+    padding: 0 3px;
+  }
+  .right-col{
+    padding: 0 3px;
+    width: 30%;
+    float: left;
+  }
+}
+
+.bgr-col{
+  @include box-shadow(0 1px 4px rgba($black,0.11));
+  border:1px solid rgba(#e5e5e5,0.81);
+  @include border-radius(5px);
+  background: #fff;
+}
+/* layout */
+
+/* color */
+.clr-green{
+  color: #00bd31 !important;
+}
+.clr-blue{
+  color:#50a6e0 !important;
+}
+/* e: color */
