@@ -163,3 +163,11 @@ $sprite-high-res-suffix: '-2x' !default;
 @mixin FreightBigProSemiBold(){
   font-family: FreightBigProSemiBold, Arial, Helvetica, sans-serif;
 }
+
+@mixin RobotoCondensed(){
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+@mixin SourceSansPro(){
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}

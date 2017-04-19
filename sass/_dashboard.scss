@@ -1,0 +1,111 @@
+.dashboard-page{
+  padding-bottom: 106px;
+  @include screen-size(xs){
+    padding-bottom: 0;
+  }
+}
+.dashboard{
+  padding-top: 30px;
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include clearfix();
+    li{
+      float: left;
+      width: 25%;
+      text-align: center;
+      margin-bottom: 22px;
+      padding: 0 10px;
+      @include screen-size(xs){
+        width: 50%;
+      }
+      &:nth-child(4n+5){
+        clear: left;
+        @include screen-size(xs){
+          clear: inherit;
+        }
+      }
+      &:nth-child(2n+3){
+        @include screen-size(xs){
+          clear: left;
+        }
+      }
+      .img{
+        height: 58px;
+        margin-bottom: 7px;
+        img{
+          max-height: 58px;
+        }
+      }
+      h3{
+        font-weight: normal;
+        font-size: 16px;
+        a{
+          @include transition-value(color ease 0.5s);
+        }
+      }
+    }
+  }
+}
+
+.banner-adv{
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/upload/banner.jpg") no-repeat top center/cover;
+  padding: 22px 65px 0 40px;
+  color: #fff;
+  @include clearfix();
+  @include screen-size(xs){
+    position: static;
+    height: auto;
+    padding-bottom: 22px;
+  }
+  img{
+    max-height: 100px;
+  }
+  h2{
+    font-size: 21px;
+    @include MyriadPro();
+    font-weight: normal;
+    margin: 0;
+  }
+  p{
+    @include RobotoCondensed();
+    font-weight: 700;
+    font-size: 21px;
+    span{
+      font-size: 12px;
+      color: #ffcc33;
+      text-decoration: line-through;
+      vertical-align: text-top;
+      sup{
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  .pull-right, .pull-left{
+    @include screen-size(xs){
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .buy-now{
+    @include SourceSansPro();
+    font-weight: 900;
+    color:#4d546b;
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    background: $white;
+    @include border-radius(5px);
+    display: inline-block;
+    margin-top: 8px;
+  }
+}

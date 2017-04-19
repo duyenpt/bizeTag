@@ -11,4 +11,7 @@ $(document).ready(function(){
         variableWidth:true
     })
 
+    $('.toggle-menu').click(function(){
+        $('header').toggleClass('open-menu');
+    });
 });
