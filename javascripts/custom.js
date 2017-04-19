@@ -4,6 +4,8 @@
 $(document).ready(function(){
     $('.right-col .bgr-col').mCustomScrollbar();
 
+    $('.main-col .bgr-col').mCustomScrollbar();
+
     $('.navigator-top .slide-nav').slick({
         dots: false,
         infinite: true,
