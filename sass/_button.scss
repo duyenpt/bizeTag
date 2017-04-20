@@ -16,3 +16,24 @@
     background: url("../images/bg/btn-gray.png") repeat-x;
   }
 }
+
+.g-btn-2{
+  @include box-shadow(0 4px 3px rgba($black,0.06));
+  border:1px solid transparent;
+  line-height: 48px;
+  text-transform: uppercase;
+  min-width: 148px;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  display: inline-block;
+  @include transition-value(all ease-in-out 0.5s);
+  &.btn-blue{
+    border-color: #328dcb;
+    color:#328dcb;
+    &:hover{
+      background: #328dcb;
+      color:#fff;
+    }
+  }
+}

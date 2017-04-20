@@ -32,35 +32,6 @@
   }
 }
 
-.form-control{
-  border:none;
-  border-bottom:1px solid #eaeaea;
-  font-size: 14px;
-  @include Roboto();
-  color:#969696;
-  @include placeholder(#969696);
-  width: 100%;
-  padding: 5px;
-}
-
-.form-group{
-  position: relative;
-  margin-bottom: 10px;
-  .required{
-    position: absolute;
-    top:50%;
-    right:5px;
-    color:#e60016;
-    font-size: 14px;
-    @include transform(translateY(-50%));
-  }
-  select{
-    &+.required{
-      right:-6px;
-      margin-top: 2px;
-    }
-  }
-}
 .bizetag-loyalty-discount{
   @include clearfix();
   padding-bottom: 10px;

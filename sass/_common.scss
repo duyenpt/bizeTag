@@ -217,6 +217,11 @@ a{
   }
 }
 
+.clearfix{
+  clear: both;
+  @include clearfix();
+}
+
 /* navigator top */
 .navigator-top{
   position: absolute;
@@ -370,3 +375,62 @@ a{
   color:#50a6e0 !important;
 }
 /* e: color */
+
+/* form */
+label{
+  color:#354753;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+
+.form-control{
+  border:none;
+  border-bottom:1px solid #eaeaea;
+  font-size: 14px;
+  @include Roboto();
+  color:#969696;
+  @include placeholder(#969696);
+  width: 100%;
+  padding: 15px 5px 5px;
+}
+
+.form-group{
+  position: relative;
+  margin-bottom: 10px;
+  .required{
+    position: absolute;
+    bottom:3px;
+    right:5px;
+    color:#e60016;
+    font-size: 14px;
+  }
+  select{
+    &+.required{
+      right:-6px;
+      margin-top: 2px;
+    }
+  }
+}
+/* e: form */
+
+/* grid */
+.row-item{
+  margin: 0 -20px;
+  @include clearfix();
+  .col-50{
+    width: 50%;
+    padding: 0 20px;
+    float: left;
+    @include screen-size(xs){
+      width: 100%;
+    }
+  }
+
+  .col-100{
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+  }
+}
+/* e:grid */
