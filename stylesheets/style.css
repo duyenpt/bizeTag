@@ -4886,7 +4886,11 @@ header nav .nav-bottom li a i {
   margin-top: 8px;
 }
 
-/* line 2, ../sass/_bizETag-loyalty-discount.scss */
+/* line 1, ../sass/_bizETag-loyalty-discount.scss */
+.g-box {
+  padding-bottom: 30px;
+}
+/* line 3, ../sass/_bizETag-loyalty-discount.scss */
 .g-box .header-box {
   border-bottom: 1px solid #f5f5f5;
   -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
@@ -4901,7 +4905,7 @@ header nav .nav-bottom li a i {
   display: table;
   clear: both;
 }
-/* line 7, ../sass/_bizETag-loyalty-discount.scss */
+/* line 8, ../sass/_bizETag-loyalty-discount.scss */
 .g-box .header-box h2 {
   font-weight: 500;
   color: #3f3f3f;
@@ -4909,20 +4913,30 @@ header nav .nav-bottom li a i {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 16, ../sass/_bizETag-loyalty-discount.scss */
+/* line 17, ../sass/_bizETag-loyalty-discount.scss */
 .g-box .body-box {
   padding: 30px 15px;
 }
-/* line 20, ../sass/_bizETag-loyalty-discount.scss */
+/* line 21, ../sass/_bizETag-loyalty-discount.scss */
 .g-box .bottom-btn {
   text-align: center;
 }
-/* line 22, ../sass/_bizETag-loyalty-discount.scss */
+/* line 23, ../sass/_bizETag-loyalty-discount.scss */
 .g-box .bottom-btn button {
   margin: 0 5px;
 }
+@media screen and (max-width: 767px) {
+  /* line 23, ../sass/_bizETag-loyalty-discount.scss */
+  .g-box .bottom-btn button {
+    margin-bottom: 10px;
+  }
+  /* line 27, ../sass/_bizETag-loyalty-discount.scss */
+  .g-box .bottom-btn button:last-child {
+    margin-bottom: 0;
+  }
+}
 
-/* line 28, ../sass/_bizETag-loyalty-discount.scss */
+/* line 35, ../sass/_bizETag-loyalty-discount.scss */
 .form-control {
   border: none;
   border-bottom: 1px solid #eaeaea;
@@ -4951,11 +4965,12 @@ header nav .nav-bottom li a i {
   color: #969696;
 }
 
-/* line 39, ../sass/_bizETag-loyalty-discount.scss */
+/* line 46, ../sass/_bizETag-loyalty-discount.scss */
 .form-group {
   position: relative;
+  margin-bottom: 10px;
 }
-/* line 41, ../sass/_bizETag-loyalty-discount.scss */
+/* line 49, ../sass/_bizETag-loyalty-discount.scss */
 .form-group .required {
   position: absolute;
   top: 50%;
@@ -4967,15 +4982,15 @@ header nav .nav-bottom li a i {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 50, ../sass/_bizETag-loyalty-discount.scss */
+/* line 58, ../sass/_bizETag-loyalty-discount.scss */
 .form-group select + .required {
   right: -6px;
   margin-top: 2px;
 }
 
-/* line 56, ../sass/_bizETag-loyalty-discount.scss */
+/* line 64, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eaeaea;
 }
 /* line 156, ../sass/_mixin.scss */
@@ -4984,20 +4999,33 @@ header nav .nav-bottom li a i {
   display: table;
   clear: both;
 }
-/* line 60, ../sass/_bizETag-loyalty-discount.scss */
+/* line 68, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .pull-left {
   margin-right: 15px;
 }
-/* line 62, ../sass/_bizETag-loyalty-discount.scss */
+@media screen and (max-width: 767px) {
+  /* line 68, ../sass/_bizETag-loyalty-discount.scss */
+  .bizetag-loyalty-discount .pull-left {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+/* line 74, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .pull-left:last-child {
   margin-right: 0;
 }
-/* line 66, ../sass/_bizETag-loyalty-discount.scss */
+/* line 78, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .form-group {
   display: inline-block;
   width: 90px;
 }
-/* line 69, ../sass/_bizETag-loyalty-discount.scss */
+@media screen and (max-width: 767px) {
+  /* line 78, ../sass/_bizETag-loyalty-discount.scss */
+  .bizetag-loyalty-discount .form-group {
+    width: 45%;
+  }
+}
+/* line 84, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .form-group .form-control {
   color: #2c3e50;
 }
@@ -5019,13 +5047,20 @@ header nav .nav-bottom li a i {
 .bizetag-loyalty-discount .form-group .form-control:-ms-input-placeholder {
   color: #2c3e50;
 }
-/* line 74, ../sass/_bizETag-loyalty-discount.scss */
+/* line 89, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount label {
   color: #2c3e50;
   font-size: 14px;
   vertical-align: text-bottom;
 }
-/* line 79, ../sass/_bizETag-loyalty-discount.scss */
+@media screen and (max-width: 767px) {
+  /* line 89, ../sass/_bizETag-loyalty-discount.scss */
+  .bizetag-loyalty-discount label {
+    display: block;
+    margin-bottom: 3px;
+  }
+}
+/* line 98, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount span {
   margin-left: 15px;
 }
