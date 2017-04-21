@@ -5328,8 +5328,9 @@ header nav .nav-bottom li a i {
   color: #969696;
   font-size: 16px;
   display: inline-block;
+  padding-top: 7px;
 }
-/* line 103, ../sass/_check-in.scss */
+/* line 104, ../sass/_check-in.scss */
 .select-etag .list-etag ul li label:after {
   content: "";
   background: url("../images/check.jpg") no-repeat;
