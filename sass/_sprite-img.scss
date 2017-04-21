@@ -53,3 +53,7 @@
 .sprite-add-landingpage{
   @include use-sprite("add-landingpage",true);
 }
+
+.sprite-back{
+  @include use-sprite("back",true);
+}

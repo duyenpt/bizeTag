@@ -1,0 +1,117 @@
+.check-in-user{
+  max-width: 95%;
+  margin: auto;
+  @include clearfix();
+  padding: 10px 0;
+  @include screen-size-max(md){
+    max-width: 100%;
+  }
+  .avatar{
+    float: left;
+    width: 30%;
+    padding-right: 40px;
+    img{
+      @include border-radius(4px);
+    }
+    @include screen-size(xs){
+      width: 100%;
+      text-align: center;
+      padding: 10px 0 25px;
+    }
+  }
+  .info-user{
+    float: left;
+    width: 70%;
+    @include screen-size(xs){
+      width: 100%;
+    }
+    .row-item{
+      .col-50{
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+.select-etag{
+  margin-bottom: 10px;
+  .text{
+    font-size: 18px;
+    text-align: center;
+    color:#354753;
+    a{
+      color: #0083c7;
+      font-size: 16px;
+    }
+  }
+  .list-etag{
+    max-width: 85%;
+    margin: auto;
+    @include screen-size-max(md){
+      max-width: 100%;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0 10px;
+      @include screen-size-max(md){
+        margin: 0;
+      }
+      li{
+        position: relative;
+        padding: 0 60px;
+        min-height: 35px;
+        margin: 30px 0 0;
+        @include screen-size-max(md){
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        .number{
+          display: block;
+          width: 32px;
+          height: 32px;
+          border:1px solid #268cd3;
+          color:#268cd3;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+          font-weight: 500;
+          @include box-shadow(0 5px 51px rgba($black,0.06));
+          position: absolute;
+          top:0;
+          left: 0;
+          background: $white;
+        }
+        input{
+          position: absolute;
+          top: 0;
+          left: 60px;
+          opacity: 0;
+          &:checked{
+            &+label{
+              color: #504f4f;
+              &:after{
+                background-image: url("../images/checked.jpg");
+              }
+            }
+          }
+        }
+        label{
+          color:#969696;
+          font-size: 16px;
+          display: inline-block;
+          &:after{
+            content: "";
+            background: url("../images/check.jpg") no-repeat;
+            width: 32px;
+            height: 32px;
+            @include box-shadow(0 5px 51px rgba($black,0.06));
+            position: absolute;
+            top:0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
