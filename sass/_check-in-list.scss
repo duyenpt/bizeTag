@@ -1,0 +1,99 @@
+.check-in-list{
+  margin: -30px -16px 0;
+  table{
+    tr{
+      td{
+        padding: 25px 5px;
+        vertical-align: top;
+        &:first-child{
+          padding-left: 22px;
+        }
+        &:last-child{
+          padding-right: 22px;
+        }
+        p{
+          margin-bottom: 5px;
+        }
+      }
+    }
+    tbody{
+     tr{
+       &:first-child{
+         background: url("../images/bg/bg-tbody.png") repeat-x top left;
+       }
+     }
+    }
+  }
+  .user{
+    position: relative;
+    min-height: 38px;
+    padding-left: 45px;
+    .avatar{
+      height: 38px;
+      width: 38px;
+      display: block;
+      position: absolute;
+      top:0;
+      left: 0;
+      background: #e0e0e0;
+      img{
+        max-height: 38px;
+      }
+    }
+    .name{
+      font-weight: 500;
+      .clr-gray{
+        font-weight: normal;
+      }
+    }
+  }
+  p{
+    i{
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  }
+  input{
+    font-weight: 300;
+    text-align: center;
+    border-bottom-style:dashed;
+    color:#a2a2a2;
+    @include placeholder(#a2a2a2);
+  }
+  .td-percent{
+    p{
+      @include MyriadPro();
+      font-size: 16px;
+      font-weight: 500;
+      color: #282828;
+      margin-top: 15px;
+    }
+  }
+  .td-checkout{
+    a{
+      color: #3998d8;
+      text-decoration: underline;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  .percent-box{
+    display: inline-block;
+    background: #393939;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    color: $white;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.table-responsive{
+  overflow-x: auto;
+  overflow-y: hidden;
+  table{
+    white-space: nowrap;
+  }
+}

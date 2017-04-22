@@ -57,3 +57,7 @@
 .sprite-back{
   @include use-sprite("back",true);
 }
+
+.sprite-mapker{
+  @include use-sprite("mapker",true);
+}

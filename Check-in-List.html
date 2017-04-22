@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check In List</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="description description description description description description description description description">
+    <meta name="keywords" content="keyword1, keyword2, keyword3, keyword4, keyword5, keyword6, keyword7">
+
+
+    <link  rel="stylesheet" type="text/css" href="stylesheets/jquery.mCustomScrollbar.css"/>
+    <link  rel="stylesheet" type="text/css" href="stylesheets/slick.css"/>
+    <link  rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="javascripts/jquery.mCustomScrollbar.js"></script>
+    <script src="javascripts/slick.js"></script>
+    <script src="javascripts/custom.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <!-- header -->
+    <header>
+        <div class="bg-logo"><div class="logo">
+            <img src="images/logo.png" alt="" width="74px"/>
+            <a href="#"><i class="fa fa-edit"></i> Edit</a>
+        </div></div><!-- /.logo -->
+        <span class="toggle-menu"><i class="fa fa-list"></i></span>
+        <nav>
+            <div class="checkin-request">
+                <div class="check-in">
+                    <a href="#" class="pull-left">
+                        <i class="sprite-checkin-request"></i>
+                        Checkin Requests
+                    </a>
+                    <a href="#" class="pull-right">+ 50 this week</a>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="sprite-landingpage"></i> Landing Page</a></li>
+                    <li><a href="#"><i class="sprite-bizetag"></i> BizeTag</a></li>
+                    <li><a href="#"><i class="sprite-claims"></i> Claims</a></li>
+                </ul>
+            </div><!-- /.checkin-request -->
+
+            <ul class="nav-bottom">
+                <li>
+                    <a href="#">
+                        <i class="sprite-board"></i><br/>
+                        Board
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sprite-post"></i><br/>
+                        Post
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sprite-setting"></i><br/>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="sprite-logout"></i><br/>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- e: header -->
+
+    <!-- main content -->
+    <div class="main-content fill">
+        <!-- navigater top -->
+        <nav class="navigator-top">
+            <div class="slide-nav">
+                <div class="item">
+                    <a href="#" class="clr-1">
+                        <i class="sprite-user"></i><br/>
+                        User Information
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-2">
+                        <i class="sprite-email"></i><br/>
+                        Email Invitation
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-3">
+                        <i class="sprite-payment"></i><br/>
+                        Payment
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-4">
+                        <i class="sprite-support"></i><br/>
+                        Support
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-5">
+                        <i class="sprite-add-landingpage"></i><br/>
+                        Add Landing Page
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-4">
+                        <i class="sprite-support"></i><br/>
+                        Support
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="clr-5">
+                        <i class="sprite-add-landingpage"></i><br/>
+                        Add Landing Page
+                    </a>
+                </div>
+            </div>
+        </nav><!-- /.navigator-top -->
+        <!-- navigater top -->
+
+        <div class="row fill">
+            <div class="main-col fill">
+                <div class="bgr-col fill">
+                    <div class="g-box">
+                        <div class="header-box">
+                            <h2>Checkins</h2>
+                            <a href="#" class="btn-back"><i class="sprite-back"></i></a>
+                        </div><!-- /.header-box -->
+
+                        <div class="body-box">
+                            <div class="table-responsive check-in-list">
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                                    <thead>
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-note">
+                                                <input type="text" placeholder="Note" class="form-control"/>
+                                            </td>
+                                            <td class="td-amount">
+                                                <input type="text" placeholder="Amount" class="form-control"/>
+                                            </td>
+                                            <td class="td-percent">
+                                                <p>30%</p>
+                                            </td>
+                                            <td class="td-total">
+                                                <input type="text" placeholder="Total" class="form-control"/>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-time">
+                                                <p class="clr-gray">Today,<br/>
+                                                    10:30 PM</p>
+                                            </td>
+                                            <td class="td-user">
+                                                <div class="user">
+                                                    <a href="#" class="avatar"><img src="images/upload/avatar-sm.jpg" alt="" /></a>
+                                                    <div class="text">
+                                                        <p class="name"><a href="#">Ha Nguyen</a> <span class="clr-gray">(7329664339)</span></p>
+                                                        <p class="clr-blue">E tag : 1 , 3 ,5 </p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="td-discount text-center" colspan="3">
+                                                <p>10% New Customer Discount</p>
+                                                <p><i class="sprite-mapker"></i> 4/5</p>
+                                            </td>
+                                            <td class="td-percent text-right">
+                                                <div class="percent-box">20%</div>
+                                            </td>
+                                            <td class="td-checkout">
+                                                <a href="#">Check out</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- /.table-responsive -->
+                        </div><!-- /.body-box -->
+                    </div><!-- /.g-box -->
+                </div>
+            </div><!-- /.main-col -->
+            <div class="right-col fill">
+                <div class="bgr-col fill">
+                    <div class="activity">
+                        <ul>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-green">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#" class="clr-blue">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="avatar"><img src="images/avatar.jpg" alt="" /></a>
+                                <div class="text">
+                                    <h4><a href="#">Online Visitor requested to Checkin in 45 mins</a></h4>
+                                    <p class="time"><span>Today,</span> 10:30 PM</p>
+                                    <div class="func">
+                                        <a href="#">[ Confirm ]</a>
+                                        <a href="#">[ Cancel ]</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /.activity -->
+                </div>
+            </div><!-- /.right-col -->
+        </div><!-- /.row -->
+    </div><!-- /.main-content -->
+    <!-- e: main content -->
+</div>
+</body>
+</html>

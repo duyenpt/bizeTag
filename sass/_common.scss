@@ -111,7 +111,7 @@ html, body{
   url('../fonts/MyriadPro/MyriadPro-BoldIt.woff') format('woff'),
   url('../fonts/MyriadPro/MyriadPro-BoldIt.svg#MyriadPro-BoldIt') format('svg'),
   url('../fonts/MyriadPro/MyriadPro-BoldIt.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -157,13 +157,13 @@ html, body{
 }
 
 @font-face {
-  font-family: "MyriadProSemibold";
+  font-family: "MyriadPro";
   src: url('../fonts/MyriadPro/MyriadPro-Semibold.eot?') format('eot');
   src: url('../fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
   url('../fonts/MyriadPro/MyriadPro-Semibold.woff') format('woff'),
   url('../fonts/MyriadPro/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
   url('../fonts/MyriadPro/MyriadPro-Semibold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -373,6 +373,22 @@ a{
 }
 .clr-blue{
   color:#50a6e0 !important;
+}
+.clr-gray{
+  color:#5d5d5d !important;;
+}
+
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-justify{
+  text-align: justify;
 }
 /* e: color */
 

@@ -16,4 +16,11 @@ $(document).ready(function(){
     $('.toggle-menu').click(function(){
         $('header').toggleClass('open-menu');
     });
+
+//    $(".check-in-list").mCustomScrollbar({
+//        axis:"x",
+//        advanced:{
+//            autoExpandHorizontalScroll:true
+//        }
+//    });
 });

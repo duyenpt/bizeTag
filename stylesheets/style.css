@@ -3863,7 +3863,7 @@ html, body {
   font-family: 'MyriadPro';
   src: url("../fonts/MyriadPro/MyriadPro-BoldIt.eot?") format("eot");
   src: url("../fonts/MyriadPro/MyriadPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-BoldIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldIt.svg#MyriadPro-BoldIt") format("svg"), url("../fonts/MyriadPro/MyriadPro-BoldIt.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -3900,10 +3900,10 @@ html, body {
 }
 
 @font-face {
-  font-family: "MyriadProSemibold";
+  font-family: "MyriadPro";
   src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?") format("eot");
   src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg"), url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -4181,16 +4181,41 @@ a:hover {
   color: #50a6e0 !important;
 }
 
+/* line 377, ../sass/_common.scss */
+.clr-gray {
+  color: #5d5d5d !important;
+}
+
+/* line 381, ../sass/_common.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 384, ../sass/_common.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 387, ../sass/_common.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 390, ../sass/_common.scss */
+.text-justify {
+  text-align: justify;
+}
+
 /* e: color */
 /* form */
-/* line 380, ../sass/_common.scss */
+/* line 396, ../sass/_common.scss */
 label {
   color: #354753;
   font-weight: normal;
   font-size: 16px;
 }
 
-/* line 387, ../sass/_common.scss */
+/* line 403, ../sass/_common.scss */
 .form-control {
   border: none;
   border-bottom: 1px solid #eaeaea;
@@ -4219,12 +4244,12 @@ label {
   color: #969696;
 }
 
-/* line 398, ../sass/_common.scss */
+/* line 414, ../sass/_common.scss */
 .form-group {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 401, ../sass/_common.scss */
+/* line 417, ../sass/_common.scss */
 .form-group .required {
   position: absolute;
   bottom: 3px;
@@ -4232,7 +4257,7 @@ label {
   color: #e60016;
   font-size: 14px;
 }
-/* line 409, ../sass/_common.scss */
+/* line 425, ../sass/_common.scss */
 .form-group select + .required {
   right: -6px;
   margin-top: 2px;
@@ -4240,7 +4265,7 @@ label {
 
 /* e: form */
 /* grid */
-/* line 418, ../sass/_common.scss */
+/* line 434, ../sass/_common.scss */
 .row-item {
   margin: 0 -20px;
 }
@@ -4250,19 +4275,19 @@ label {
   display: table;
   clear: both;
 }
-/* line 421, ../sass/_common.scss */
+/* line 437, ../sass/_common.scss */
 .row-item .col-50 {
   width: 50%;
   padding: 0 20px;
   float: left;
 }
 @media screen and (max-width: 767px) {
-  /* line 421, ../sass/_common.scss */
+  /* line 437, ../sass/_common.scss */
   .row-item .col-50 {
     width: 100%;
   }
 }
-/* line 430, ../sass/_common.scss */
+/* line 446, ../sass/_common.scss */
 .row-item .col-100 {
   width: 100%;
   float: left;
@@ -4272,8 +4297,8 @@ label {
 /* e:grid */
 /* line 1, ../sass/_sprite-img.scss */
 .sprite-add-landingpage {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -23px -78px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -34px -23px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 23px;
@@ -4283,8 +4308,8 @@ label {
 
 /* line 5, ../sass/_sprite-img.scss */
 .sprite-checkin-request {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -46px -78px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -21px -103px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 32px;
@@ -4294,8 +4319,8 @@ label {
 
 /* line 9, ../sass/_sprite-img.scss */
 .sprite-landingpage {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 -142px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -53px -103px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 32px;
@@ -4305,8 +4330,8 @@ label {
 
 /* line 13, ../sass/_sprite-img.scss */
 .sprite-bizetag {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -49px -265px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -177px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 36px;
@@ -4316,7 +4341,7 @@ label {
 
 /* line 17, ../sass/_sprite-img.scss */
 .sprite-claims {
-  background-image: url('../images/sprites-s513b24df73.png');
+  background-image: url('../images/sprites-s37b72fd2a5.png');
   background-position: -25px -46px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4327,7 +4352,7 @@ label {
 
 /* line 21, ../sass/_sprite-img.scss */
 .sprite-board {
-  background-image: url('../images/sprites-s513b24df73.png');
+  background-image: url('../images/sprites-s37b72fd2a5.png');
   background-position: -22px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4338,8 +4363,8 @@ label {
 
 /* line 25, ../sass/_sprite-img.scss */
 .sprite-post {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 0;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -12px -23px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -4349,8 +4374,8 @@ label {
 
 /* line 29, ../sass/_sprite-img.scss */
 .sprite-setting {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 -110px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -103px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 21px;
@@ -4360,8 +4385,8 @@ label {
 
 /* line 33, ../sass/_sprite-img.scss */
 .sprite-logout {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -25px -23px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 0;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -4371,8 +4396,8 @@ label {
 
 /* line 37, ../sass/_sprite-img.scss */
 .sprite-user {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -47px -23px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -71px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 23px;
@@ -4382,8 +4407,8 @@ label {
 
 /* line 41, ../sass/_sprite-img.scss */
 .sprite-email {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 -23px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -46px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 22px;
@@ -4393,7 +4418,7 @@ label {
 
 /* line 45, ../sass/_sprite-img.scss */
 .sprite-payment {
-  background-image: url('../images/sprites-s513b24df73.png');
+  background-image: url('../images/sprites-s37b72fd2a5.png');
   background-position: -44px 0;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -4404,8 +4429,8 @@ label {
 
 /* line 49, ../sass/_sprite-img.scss */
 .sprite-support {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 -78px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -57px -23px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 23px;
@@ -4415,8 +4440,8 @@ label {
 
 /* line 53, ../sass/_sprite-img.scss */
 .sprite-add-landingpage {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: -23px -78px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: -34px -23px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 23px;
@@ -4426,12 +4451,23 @@ label {
 
 /* line 57, ../sass/_sprite-img.scss */
 .sprite-back {
-  background-image: url('../images/sprites-s513b24df73.png');
-  background-position: 0 -490px;
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -489px;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 66px;
   width: 87px;
+  display: inline-block;
+}
+
+/* line 61, ../sass/_sprite-img.scss */
+.sprite-mapker {
+  background-image: url('../images/sprites-s37b72fd2a5.png');
+  background-position: 0 -23px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 21px;
+  width: 12px;
   display: inline-block;
 }
 
@@ -5343,4 +5379,125 @@ header nav .nav-bottom li a i {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* line 1, ../sass/_check-in-list.scss */
+.check-in-list {
+  margin: -30px -16px 0;
+}
+/* line 5, ../sass/_check-in-list.scss */
+.check-in-list table tr td {
+  padding: 25px 5px;
+  vertical-align: top;
+}
+/* line 8, ../sass/_check-in-list.scss */
+.check-in-list table tr td:first-child {
+  padding-left: 22px;
+}
+/* line 11, ../sass/_check-in-list.scss */
+.check-in-list table tr td:last-child {
+  padding-right: 22px;
+}
+/* line 14, ../sass/_check-in-list.scss */
+.check-in-list table tr td p {
+  margin-bottom: 5px;
+}
+/* line 21, ../sass/_check-in-list.scss */
+.check-in-list table tbody tr:first-child {
+  background: url("../images/bg/bg-tbody.png") repeat-x top left;
+}
+/* line 27, ../sass/_check-in-list.scss */
+.check-in-list .user {
+  position: relative;
+  min-height: 38px;
+  padding-left: 45px;
+}
+/* line 31, ../sass/_check-in-list.scss */
+.check-in-list .user .avatar {
+  height: 38px;
+  width: 38px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e0e0e0;
+}
+/* line 39, ../sass/_check-in-list.scss */
+.check-in-list .user .avatar img {
+  max-height: 38px;
+}
+/* line 43, ../sass/_check-in-list.scss */
+.check-in-list .user .name {
+  font-weight: 500;
+}
+/* line 45, ../sass/_check-in-list.scss */
+.check-in-list .user .name .clr-gray {
+  font-weight: normal;
+}
+/* line 51, ../sass/_check-in-list.scss */
+.check-in-list p i {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+/* line 56, ../sass/_check-in-list.scss */
+.check-in-list input {
+  font-weight: 300;
+  text-align: center;
+  border-bottom-style: dashed;
+  color: #a2a2a2;
+}
+/* line 139, ../sass/_mixin.scss */
+.check-in-list input::-webkit-input-placeholder {
+  color: #a2a2a2;
+}
+/* line 142, ../sass/_mixin.scss */
+.check-in-list input:-moz-placeholder {
+  color: #a2a2a2;
+  opacity: 1;
+}
+/* line 146, ../sass/_mixin.scss */
+.check-in-list input::-moz-placeholder {
+  color: #a2a2a2;
+  opacity: 1;
+}
+/* line 150, ../sass/_mixin.scss */
+.check-in-list input:-ms-input-placeholder {
+  color: #a2a2a2;
+}
+/* line 64, ../sass/_check-in-list.scss */
+.check-in-list .td-percent p {
+  font-family: MyriadPro, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #282828;
+  margin-top: 15px;
+}
+/* line 73, ../sass/_check-in-list.scss */
+.check-in-list .td-checkout a {
+  color: #3998d8;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 15px;
+}
+/* line 80, ../sass/_check-in-list.scss */
+.check-in-list .percent-box {
+  display: inline-block;
+  background: #393939;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  color: white;
+  line-height: 42px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 93, ../sass/_check-in-list.scss */
+.table-responsive {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/* line 96, ../sass/_check-in-list.scss */
+.table-responsive table {
+  white-space: nowrap;
 }
