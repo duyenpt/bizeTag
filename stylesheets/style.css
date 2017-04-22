@@ -4290,11 +4290,100 @@ label {
 /* line 446, ../sass/_common.scss */
 .row-item .col-100 {
   width: 100%;
-  float: left;
   padding: 0 20px;
+  float: left;
+}
+/* line 451, ../sass/_common.scss */
+.row-item .col-40 {
+  width: 40%;
+  padding: 0 20px;
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  /* line 451, ../sass/_common.scss */
+  .row-item .col-40 {
+    width: 100%;
+  }
+}
+/* line 459, ../sass/_common.scss */
+.row-item .col-60 {
+  width: 60%;
+  padding: 0 20px;
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  /* line 459, ../sass/_common.scss */
+  .row-item .col-60 {
+    width: 100%;
+  }
 }
 
 /* e:grid */
+/* box general */
+/* line 471, ../sass/_common.scss */
+.g-box {
+  padding-bottom: 30px;
+}
+/* line 473, ../sass/_common.scss */
+.g-box .header-box {
+  border-bottom: 1px solid #f5f5f5;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
+  -ms-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
+  padding: 20px 22px 15px;
+  position: relative;
+}
+/* line 156, ../sass/_mixin.scss */
+.g-box .header-box:after, .g-box .header-box:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 479, ../sass/_common.scss */
+.g-box .header-box h2 {
+  font-weight: 500;
+  color: #3f3f3f;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* line 487, ../sass/_common.scss */
+.g-box .header-box .btn-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+/* line 495, ../sass/_common.scss */
+.g-box .body-box {
+  padding: 30px 15px;
+}
+/* line 499, ../sass/_common.scss */
+.g-box .bottom-btn {
+  text-align: center;
+  padding: 0 22px;
+}
+/* line 502, ../sass/_common.scss */
+.g-box .bottom-btn button {
+  margin: 0 5px;
+}
+@media screen and (max-width: 767px) {
+  /* line 502, ../sass/_common.scss */
+  .g-box .bottom-btn button {
+    margin-bottom: 10px;
+  }
+  /* line 506, ../sass/_common.scss */
+  .g-box .bottom-btn button:last-child {
+    margin-bottom: 0;
+  }
+}
+/* line 511, ../sass/_common.scss */
+.g-box .bottom-btn.text-left {
+  text-align: left;
+}
+
+/* e: box general */
 /* line 1, ../sass/_sprite-img.scss */
 .sprite-add-landingpage {
   background-image: url('../images/sprites-s37b72fd2a5.png');
@@ -4906,65 +4995,7 @@ header nav .nav-bottom li a i {
   margin-top: 8px;
 }
 
-/* line 1, ../sass/_bizETag-loyalty-discount.scss */
-.g-box {
-  padding-bottom: 30px;
-}
 /* line 3, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .header-box {
-  border-bottom: 1px solid #f5f5f5;
-  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
-  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
-  -ms-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.09);
-  padding: 20px 22px 15px;
-  position: relative;
-}
-/* line 156, ../sass/_mixin.scss */
-.g-box .header-box:after, .g-box .header-box:before {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 9, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .header-box h2 {
-  font-weight: 500;
-  color: #3f3f3f;
-  font-size: 18px;
-  margin: 0;
-  text-transform: uppercase;
-}
-/* line 17, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .header-box .btn-back {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
-}
-/* line 25, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .body-box {
-  padding: 30px 15px;
-}
-/* line 29, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .bottom-btn {
-  text-align: center;
-}
-/* line 31, ../sass/_bizETag-loyalty-discount.scss */
-.g-box .bottom-btn button {
-  margin: 0 5px;
-}
-@media screen and (max-width: 767px) {
-  /* line 31, ../sass/_bizETag-loyalty-discount.scss */
-  .g-box .bottom-btn button {
-    margin-bottom: 10px;
-  }
-  /* line 35, ../sass/_bizETag-loyalty-discount.scss */
-  .g-box .bottom-btn button:last-child {
-    margin-bottom: 0;
-  }
-}
-
-/* line 43, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount {
   padding-bottom: 10px;
   border-bottom: 1px solid #eaeaea;
@@ -4975,33 +5006,33 @@ header nav .nav-bottom li a i {
   display: table;
   clear: both;
 }
-/* line 47, ../sass/_bizETag-loyalty-discount.scss */
+/* line 7, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .pull-left {
   margin-right: 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 47, ../sass/_bizETag-loyalty-discount.scss */
+  /* line 7, ../sass/_bizETag-loyalty-discount.scss */
   .bizetag-loyalty-discount .pull-left {
     width: 100%;
     margin-right: 0;
   }
 }
-/* line 53, ../sass/_bizETag-loyalty-discount.scss */
+/* line 13, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .pull-left:last-child {
   margin-right: 0;
 }
-/* line 57, ../sass/_bizETag-loyalty-discount.scss */
+/* line 17, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .form-group {
   display: inline-block;
   width: 90px;
 }
 @media screen and (max-width: 767px) {
-  /* line 57, ../sass/_bizETag-loyalty-discount.scss */
+  /* line 17, ../sass/_bizETag-loyalty-discount.scss */
   .bizetag-loyalty-discount .form-group {
     width: 45%;
   }
 }
-/* line 63, ../sass/_bizETag-loyalty-discount.scss */
+/* line 23, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount .form-group .form-control {
   color: #2c3e50;
 }
@@ -5023,20 +5054,20 @@ header nav .nav-bottom li a i {
 .bizetag-loyalty-discount .form-group .form-control:-ms-input-placeholder {
   color: #2c3e50;
 }
-/* line 68, ../sass/_bizETag-loyalty-discount.scss */
+/* line 28, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount label {
   color: #2c3e50;
   font-size: 14px;
   vertical-align: text-bottom;
 }
 @media screen and (max-width: 767px) {
-  /* line 68, ../sass/_bizETag-loyalty-discount.scss */
+  /* line 28, ../sass/_bizETag-loyalty-discount.scss */
   .bizetag-loyalty-discount label {
     display: block;
     margin-bottom: 3px;
   }
 }
-/* line 77, ../sass/_bizETag-loyalty-discount.scss */
+/* line 37, ../sass/_bizETag-loyalty-discount.scss */
 .bizetag-loyalty-discount span {
   margin-left: 15px;
 }
@@ -5500,4 +5531,60 @@ header nav .nav-bottom li a i {
 /* line 96, ../sass/_check-in-list.scss */
 .table-responsive table {
   white-space: nowrap;
+}
+
+/* line 1, ../sass/_E-Tags-management.scss */
+.e-tag-management {
+  padding: 0 7px;
+}
+/* line 3, ../sass/_E-Tags-management.scss */
+.e-tag-management .form-group {
+  margin-bottom: 0;
+}
+/* line 6, ../sass/_E-Tags-management.scss */
+.e-tag-management .row-item {
+  margin-bottom: 24px;
+}
+/* line 10, ../sass/_E-Tags-management.scss */
+.e-tag-management .e-tag-name input {
+  color: #50a6e0;
+  border-bottom-color: #50a6e0;
+}
+/* line 139, ../sass/_mixin.scss */
+.e-tag-management .e-tag-name input::-webkit-input-placeholder {
+  color: #50a6e0;
+}
+/* line 142, ../sass/_mixin.scss */
+.e-tag-management .e-tag-name input:-moz-placeholder {
+  color: #50a6e0;
+  opacity: 1;
+}
+/* line 146, ../sass/_mixin.scss */
+.e-tag-management .e-tag-name input::-moz-placeholder {
+  color: #50a6e0;
+  opacity: 1;
+}
+/* line 150, ../sass/_mixin.scss */
+.e-tag-management .e-tag-name input:-ms-input-placeholder {
+  color: #50a6e0;
+}
+/* line 15, ../sass/_E-Tags-management.scss */
+.e-tag-management .e-tag-name .text-right {
+  color: #c5c5c5;
+  font-weight: 300;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+/* line 24, ../sass/_E-Tags-management.scss */
+.e-tag-management .e-tag-des input {
+  border: 1px solid #e8e8e8;
+  margin-top: 38px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+@media screen and (max-width: 767px) {
+  /* line 24, ../sass/_E-Tags-management.scss */
+  .e-tag-management .e-tag-des input {
+    margin-top: 15px;
+  }
 }
