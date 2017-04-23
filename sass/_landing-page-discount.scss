@@ -51,6 +51,7 @@
     background-image: url("../images/bg/upload.png");
     background-repeat: no-repeat;
     background-position: center center;
+    line-height: 280px;
     input{
       position: absolute;
       top:0;
@@ -64,6 +65,7 @@
     }
     img{
       max-height: 280px;
+      vertical-align: middle;
     }
   }
   .btn-blue{
