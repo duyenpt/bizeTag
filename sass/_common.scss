@@ -409,6 +409,9 @@ label{
   @include placeholder(#969696);
   width: 100%;
   padding: 15px 5px 5px;
+  &:focus{
+    outline: none;
+  }
 }
 
 .form-group{
